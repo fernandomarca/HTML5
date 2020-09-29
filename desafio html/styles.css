@@ -1,0 +1,13 @@
+nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    background-color: blueviolet;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
