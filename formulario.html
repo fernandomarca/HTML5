@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form method="GET" action="">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+
+        <input type="checkbox" name="curso" value="op1">ReactNative<br>
+
+        <input type="checkbox" name="curso" value="op2">ReactJs<br>
+
+        <input type="radio" name="gender" value="m" checked>Masculino <br>
+
+        <input type="radio" name="gender" value="f">Feminino <br><br>
+
+        <select name="estado" id="estado">
+
+            <optgroup label="Centro" >
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Sul">
+                <option value="PR" selected>Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio grande do Sul</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+
+        <label for="assunto">Assunto</label>
+        <input type="text" name="assunto" id="assunto">
+        <br><br>
+        <textarea 
+            placeholder="sua mensagem" 
+            name="mensagem" 
+            id="mensagem" 
+            cols="30" 
+            rows="10">
+        </textarea>
+
+        <br><br>
+
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+
+        <br><br>
+
+        <input 
+        type="datetime-local" 
+        name="data" 
+        max="2030-12-31"
+        >
+        <br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input 
+        type="tel" 
+        id="telefone"
+        pattern="[0-9]{2}[0-9]{9}"
+        placeholder="DD999999999"
+        >
+        <br><br>
+
+        <input type="file" name="arquivo">
+        <br><br>
+
+        <label for="number">Número</label>
+        <input 
+        type="number" 
+        name="numero"
+        min="0"
+        max="100"
+        step="2"
+        id="number"
+        >
+        <br><br>
+        <label for="range">Range</label>
+        <input 
+        type="range"
+        min="0"
+        max="100"
+        step="10"
+        value="50"
+        name="range"
+        id="range"
+        >
+        <br><br>
+
+        <input type="reset" value="Limpar">
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
